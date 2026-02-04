@@ -41,7 +41,7 @@ const Cart = () => {
               alt="Empty Cart"
               className="cart__empty--img"
             />
-            <h2>You don't have any books in your cart!</h2>
+            <h2>You don&apos;t have any books in your cart!</h2>
             <Link href="/books">
               <button className="btn">Browse books</button>
             </Link>
@@ -67,7 +67,7 @@ const Cart = () => {
                     <div className="cart__item" key={book.id}>
                       {/* image, title & Price */}
                       <div className="cart__book">
-                        <img
+                        <Image
                           src={book.url}
                           className="cart__book--img"
                           alt="book"

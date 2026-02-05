@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/slices/bookSlice";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 const Book = ({book}) => {
 
@@ -43,7 +44,7 @@ return(
          <>
          <Link href={`/books/${book.id}`}>
         <figure className="book__img--wrapper">
-            <img src={img.src} alt="" className="book__img" />
+            <Image src={img.src} alt="" className="book__img" />
         </figure>
     </Link>
 

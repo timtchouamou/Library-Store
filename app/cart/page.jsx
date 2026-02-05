@@ -6,6 +6,7 @@ import { Trash2Icon } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart, setQuantity } from "@/redux/slices/bookSlice";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 
 
@@ -36,7 +37,7 @@ const Cart = () => {
         {bookItems.length === 0 ? (
           // return this
           <div className="cart__empty">
-            <img
+            <Image
               src={EmptyCart}
               alt="Empty Cart"
               className="cart__empty--img"
